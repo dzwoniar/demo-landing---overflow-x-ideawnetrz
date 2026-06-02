@@ -1,0 +1,90 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=JetBrains+Mono:wght@400;500&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+  --font-display: "Playfair Display", Georgia, serif;
+  --font-mono: "JetBrains Mono", ui-monospace, SFMono-Regular, monospace;
+}
+
+/* Custom fade animations or scroll behaviors */
+html {
+  scroll-behavior: smooth;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+  scrollbar-gutter: stable;
+}
+
+body {
+  font-family: var(--font-sans);
+  background-color: #FAF8F5; /* Luxe Off-white Warm Alabaster */
+  color: #1c1a17; /* Warm desaturated charcoal */
+  overflow-x: hidden;
+}
+
+.font-display {
+  font-family: var(--font-display);
+}
+
+.font-mono {
+  font-family: var(--font-mono);
+}
+
+/* Highlight styles in the style of Sell Like Crazy (high-converting) */
+.highlight-yellow {
+  background-color: #FEE21E;
+  color: #121212;
+  padding-left: 6px;
+  padding-right: 6px;
+  font-weight: 700;
+  border-radius: 2px;
+}
+
+.highlight-gold {
+  background-color: #C5A880;
+  color: #ffffff;
+  padding-left: 6px;
+  padding-right: 6px;
+  font-weight: 700;
+  border-radius: 2px;
+}
+
+/* Selection */
+::selection {
+  background: #C5A880;
+  color: #ffffff;
+}
+
+/* Focus outline refinement */
+*:focus:not(:focus-visible) {
+  outline: none;
+}
+
+/* Custom premium scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+::-webkit-scrollbar-thumb {
+  background: rgba(17, 17, 17, 0.2);
+  border-radius: 3px;
+  transition: background-color 0.2s ease;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(17, 17, 17, 0.4);
+}
+
+/* Respect user preferences */
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+

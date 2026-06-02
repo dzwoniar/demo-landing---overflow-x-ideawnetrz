@@ -1,0 +1,6 @@
+{
+  "name": "Idea Wnętrz - Kalkulator Transparentnej Wyceny",
+  "description": "Lądowania z kalkulatorem rzetelnej wyceny ryczałtowej dla wykończenia wnętrz pod klucz. Poznaj oszczędności na VAT 8% i budżet gwarantowany.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
